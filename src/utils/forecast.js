@@ -18,7 +18,11 @@ const forecast = (longitude, latitude, callback) => {
                 + currently.temperature
                 + ' degrees out. There is a '
                 + currently.precipProbability + '%'
-                + ' chance of rain.');
+                + ' chance of rain. '
+                + 'The temperature high for today is '
+                + daily.data[0].temperatureMax + ' degrees. '
+                + 'The temperature low for today is '
+                + daily.data[0].temperatureMin + ' degrees.');
         }
     })
 }
